@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+
+        tr,
+        th,
+        td {
+            text-align: center;
+            border: 0.5px gainsboro solid;
+            padding: 2px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" align="center">
+        <a href="/index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="/pages/products.html">Products</a>&nbsp;&nbsp;&nbsp;<a
+            href="/pages/orders.html">Orders</a>&nbsp;&nbsp;&nbsp;
+        <a href="/pages/about.html">About</a>
+    </div>
+    <h1>About</h1>
+    <!--Relative URL--a href="index.html" vissza az index-be</a>
+    <br>
+    <!--Abszolút URL: <a href="http://127.0.0.1:5500/index.html">vissza az index-be</a> Nem kell az egész útvonal, mert azonos mappában vagyunk-->
+    <!--Root URL, ahol a gyökér könyvtárra utalok, a gyökér cím után jön majd eza név-->
+    <!--<a href="/index.html">vissza az index-be</a>-->
+   
+    <div align="center">
+
+        <table>
+            <caption>Opening Hours</caption>
+            <thead>
+                <th>Day</th><th>Open</th><th>Close</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday:</td><td>9:00</td><td rowspan="2">21:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td><td>10:00</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td><td colspan="2">Closed</td>
+                    
+                </tr>
+            </tbody>
+            <tfoot><td colspan="3" style="font-size: 10px">&copy; 2020</td></tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
